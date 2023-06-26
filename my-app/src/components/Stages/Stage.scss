@@ -1,0 +1,62 @@
+@import 'src/components/Const/Const.scss';
+
+.stages_container_accordion{
+  background-color: purple;
+  margin: 105px 30px auto 230px;
+  border-radius: 9px 9px;
+
+  .accordion{
+    padding: 25px;
+    background-color: $stageTitle;
+    cursor: pointer;
+    width: 100%;
+    font-size: x-large;
+    color: $accordionFont;
+    border-radius: 8px 8px 0 0;
+
+    //button.stage_closed{
+    //background-color: #484848;
+    //}
+    //
+    //button.stage_current{
+    //background-color: #6d00b9;
+    //}
+    //
+    //button.stage_scheduled{
+    //background-color: #484848;
+    //}
+
+  }
+
+  .issues_container{
+  //display: flex;
+  //justify-content: space-evenly;
+  width: 100%;
+  padding: 0 18px;
+  background-color: $issueBackground;
+  transition: max-height 0.2s ease-out;
+  color: $issueFont;
+
+    th{
+      width: 15%;
+    }
+
+    //tr{
+    //  width: 100%;
+    //}
+
+    td{
+      width: 15%;
+    }
+
+    &.issues_container_closed {
+      display: none;
+    }
+  }
+
+}
+
+.accordion:hover {
+  background-color: $stageTitleHover;
+}
+

@@ -1,0 +1,58 @@
+//@import "src/components/Const/Const.scss";
+
+#form_release {
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  border: 2px solid #00C6A9;
+  border-radius: 10px;
+  label{
+    width: 20%;
+  }
+  #prerequis{
+    text-align: left;
+    color: #36B3A4;
+  }
+
+  #project_div{
+    width: 100%;
+    margin: auto;
+  }
+
+  .form_item{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1em;
+    padding: 1em;
+    //background-color: wheat;
+
+    .form_item_div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between ;
+      width: 50%;
+      margin: auto;
+      //background-color: #61dafb;
+
+      .item_div{
+        margin: 0.50em;
+      }
+
+      .add_url {
+        display: flex;
+        margin: 0.5em;
+
+        .form_item_button{
+          margin: auto;
+        }
+      }
+    }
+
+    .form_item_input{
+      margin: auto;
+      width: 50%;
+    }
+  }
+}
+
+

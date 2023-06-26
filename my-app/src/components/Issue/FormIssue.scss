@@ -1,0 +1,60 @@
+@import "src/components/Const/Const.scss";
+
+.formIssue_container {
+  text-align: center;
+
+  #form_issue {
+    text-align: center;
+    width: 60%;
+    max-width: 700px;
+    height: 50%;
+    margin: auto;
+    padding: 1em;
+    border: 2px solid #00C6A9;
+    border-radius: 10px;
+
+    label {
+      width: 30%;
+    }
+
+    .form_item {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 1em;
+      padding: 1em;
+
+      .form_item_input {
+        width: 60%;
+      }
+
+      #for_item_supports {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      .attchmentLink {
+        width: 60%;
+
+        .attchmentLink_div {
+          margin: 0.5em;
+          //width: 100%;
+
+          .attchmentLink_input {
+            width: 100%;
+          }
+
+          .attchmentLink_button {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+  }
+
+  select {
+    text-align: center;
+    width: 60%;
+  }
+}

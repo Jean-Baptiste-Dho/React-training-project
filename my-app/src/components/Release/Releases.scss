@@ -1,0 +1,150 @@
+@import "src/components/Const/Const.scss";
+
+.app_container {
+  margin: auto;
+
+
+  h1{
+    color : white;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .app_releases_container{
+    display: flex;//
+    justify-content: space-evenly;
+
+    //.test{
+    //  display: flex;
+    //  flex-direction: column;
+    //}
+  }
+
+}
+
+.release_bloc {
+  width: 90%;
+  margin-left: 200px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .release_bloc_item {
+    margin: 15px;
+    color: black;
+    border-radius: 6px;
+    width: 20%;
+    min-width: 250px;
+    min-height: 250px;
+    transition: transform 0.5s;
+
+    a {
+      display: block;
+      text-decoration: none;
+      min-height: 200px;
+    }
+
+    .release_open {
+      margin: 0;
+      border-radius: 7px;
+      color: $OpenReleaseFont;
+      background-color: $openReleaseBackground;
+      min-width: 250px;
+      height: 100%;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px 6px 0 0;
+        color: $openTitleFont;
+        background-color: $openReleaseTitle;
+
+
+        h2 {
+          padding-inline: 10px;
+          margin: 5px;
+        }
+
+        .lien {
+          cursor: pointer;
+          display: block;
+          width: 25%;
+
+          .link_icon{
+            margin: 5px;
+          }
+        }
+
+      }
+
+      .project {
+        padding: 10px;
+
+        h3, h4, p, h5 {
+          margin: 2px;
+        }
+
+        .date_open {
+          color: $dateOpenRelease;
+          font-size: small;
+        }
+
+      }
+
+    }
+
+    .release_closed {
+      margin: 0;
+      min-width: 250px;
+      height: 100%;
+      border-radius: 6px;
+      background-color: $closedReleaseBackground;
+      color: $closedReleaseFont;
+      opacity: 50%;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $closedTitleFont;
+        background-color: $closedReleaseTitle;
+        margin: 0;
+        border-radius: 6px 6px 0 0;
+        padding-inline: 10px;
+
+        h2 {
+          margin: 5px;
+        }
+
+        .lien {
+          cursor: pointer;
+          display: block;
+          width: 25%;
+
+          .link_disable{
+            display: none;
+          }
+        }
+
+      }
+        .project {
+          padding: 10px;
+
+          .date_closed {
+            color: $dateClosedRelease;
+            font-size: small;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .release_bloc_item:hover {
+    transform: scale(1.08);
+  }

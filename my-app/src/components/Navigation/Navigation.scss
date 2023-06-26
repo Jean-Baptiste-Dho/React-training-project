@@ -1,0 +1,28 @@
+@import "src/components/Const/Const.scss";
+
+.navigation{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  nav {
+    background-color: $navBackground;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+
+
+    .link, a {
+      display: flex;
+      color : $navigationFont;
+      text-decoration: none;
+      height: 50px;
+      align-items: center;
+      padding-inline: 10px;
+    }
+
+  }
+}

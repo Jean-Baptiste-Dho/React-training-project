@@ -1,0 +1,13 @@
+@import "src/components/Const/Const.scss";
+
+.sidebar_container{
+  position: fixed;
+  margin-top: 75px;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 200px;
+  background-color: $sideBarBackground;
+  color: $sideBarFont;
+  transition: 0.50s ease-in-out;
+}

@@ -1,0 +1,67 @@
+@import "src/components/Const/Const.scss";
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: $appBackground;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.App-logo {
+  width: 100px;
+  pointer-events: none;
+  animation: App-logo-spin 5s linear infinite, App-logo-rainbow 10s linear infinite;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-rainbow {
+  0% {
+    fill: red;
+  }
+  10% {
+    fill: orange;
+  }
+  20% {
+    fill: yellow;
+  }
+  30% {
+    fill: greenyellow;
+  }
+  40% {
+    fill: #03cb03;
+  }
+  50% {
+    fill: cyan;
+  }
+  60% {
+    fill: blue;
+  }
+  70% {
+    fill: #0101da;
+  }
+  80% {
+    fill: #6d00b9;
+  }
+  90% {
+    fill: mediumpurple;
+  }
+  100% {
+    fill: red;
+  }
+}

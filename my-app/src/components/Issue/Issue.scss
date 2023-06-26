@@ -1,0 +1,78 @@
+@import "src/components/Const/Const.scss";
+
+.support_div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+table{
+
+  thead{
+
+    tr{
+
+      .creator{
+        width: 150px;
+      }
+
+      .status{
+        width: 100px;
+      }
+
+      .section{
+        width: 100px;
+      }
+
+      .comment{
+        width: 100px;
+      }
+
+      .support{
+        width: 100px;
+      }
+
+      .link{
+        width: 100px;
+      }
+    }
+
+    }
+
+
+  tbody{
+    tr {
+
+      td {
+
+        .creator {
+          width: 150px;
+        }
+
+        .status {
+          width: 100px;
+        }
+
+        .section {
+          width: 100px;
+
+        }
+
+        .comment {
+          width: 100px;
+        }
+
+        .support {
+          width: 100px;
+        }
+
+        .link {
+          width: 100px;
+        }
+      }
+
+    }
+
+  }
+
+
+}

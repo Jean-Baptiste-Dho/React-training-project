@@ -1,0 +1,48 @@
+@import "src/components/Const/Const.scss";
+
+//.modalRelease_container {
+    body.active-modal {
+        overflow-y: hidden;
+    }
+
+    .btn-modif {
+        cursor: pointer;
+        width: 25%;
+    }
+
+    .btn-add {
+        cursor: pointer;
+        font-size: xx-large;
+        padding: 10px;
+        border: $sideBarFont solid 2px;
+        border-radius: 5px;
+    }
+
+    .modal, .overlay {
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+    }
+
+    .overlay {
+        background: $overlayBackground;
+    }
+
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        margin: auto;
+        background: $modalBackground;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+//}

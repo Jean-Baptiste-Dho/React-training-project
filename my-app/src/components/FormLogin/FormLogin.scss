@@ -1,0 +1,35 @@
+#form_login {
+  text-align: center;
+  width: 60%;
+  max-width: 700px;
+  height: 50%;
+  margin: auto;
+  padding: 1em;
+
+  label{
+    width: 20%;
+  }
+
+
+  .form_item{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1em;
+    padding: 1em;
+  }
+
+  .form_item_input{
+    width: 60%;
+  }
+
+  #form_item_button{
+    margin: auto;
+    padding: 0.75em;
+  }
+
+
+}
+
+.error-message{
+  margin: 2em;
+}
